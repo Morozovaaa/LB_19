@@ -1,0 +1,421 @@
+@font-face{
+	font-family: "Gilroy";
+	font-style:normal;
+}
+
+body{
+    margin: 0 auto;
+    height: 100vh;
+    width:100%;
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35px;
+    color: #ffff;
+    background-color:#1A1D32;
+}
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+.main{
+  position: absolute;
+  background-color: #1A1D32; 
+  display: flex;
+  justify-content: space-around;
+  padding-top: 125px;
+  width: 100%;
+}
+.wrap {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  top:210px;
+  min-width: 550px;
+  min-height: 140px;
+  font-size: 32px;
+  z-index: 2;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  color: #313133;
+  background: #86988B;
+   background: #619DD1;
+  border: none;
+  border-radius: 1000px;
+  box-shadow: 12px 12px 24px #4677A3;
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding: 10px;
+  }
+
+button::before {
+content: '';
+  border-radius: 1000px;
+  min-width: calc(500px + 52px);
+  min-height: calc(140px + 12px);
+  border: 6px solid #FBEA86;
+  box-shadow: 0 0 60px #4677A3;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all .3s ease-in-out 0s;
+}
+
+.button:hover, .button:focus {
+  color: #313133;
+  transform: translateY(-6px);
+}
+
+button:hover::before, button:focus::before {
+  opacity: 1;
+}
+
+button::after {
+  content: '';
+  width: 30px; height: 30px;
+  border-radius: 100%;
+  border: 6px solid #FBEA86;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ring 1.5s infinite;
+}
+
+button:hover::after, button:focus::after {
+  animation: none;
+  display: none;
+}
+
+@keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+  }
+}
+
+.text__1{
+  position: absolute;
+width: 392px;
+height: 248px;
+left: 56px;
+top: 715px;
+font-weight: 500;
+font-size: 35px;
+line-height: 42px;
+text-align: center;
+letter-spacing: 0.04em;
+}
+.text__2{
+ position: absolute;
+width: 392px;
+height: 252px;
+left: 587px;
+top: 711px;
+font-weight: 500;
+font-size: 35px;
+line-height: 42px;
+text-align: center;
+letter-spacing: 0.04em;
+}
+.text__3{
+position: absolute;
+width: 392px;
+height: 252px;
+left: 1130px;
+top: 715px;
+font-weight: 500;
+font-size: 35px;
+line-height: 42px;
+text-align: center;
+letter-spacing: 0.04em;
+}
+.pic__5{
+  position: absolute;
+width: 508px;
+height: 676px;
+left: 800px;
+top: 1108px;
+
+}
+.text__4{
+position: absolute;
+width: 551px;
+height: 99px;
+left: 158px;
+top: 1396px;
+font-weight: 500;
+font-size: 40px;
+line-height: 49px;
+text-align: center;
+letter-spacing: 0.04em;
+}
+
+.pic__5{
+    display: inline-block; /* Строчно-блочный элемент */
+    overflow: hidden; /* Скрываем всё за контуром */
+   }
+   .pic__5 img {
+    transition: 1s; /* Время эффекта */
+    display: block; /* Убираем небольшой отступ снизу */
+   }
+   .pic__5 img:hover {
+    transform: scale(1.1); 
+      cursor: pointer;/* Увеличиваем масштаб */
+   }
+   .pic__4{
+    display: inline-block; /* Строчно-блочный элемент */
+    overflow: hidden; /* Скрываем всё за контуром */
+   }
+   .pic__4 img {
+    transition: 1s; /* Время эффекта */
+    display: block; /* Убираем небольшой отступ снизу */
+   }
+   .pic__4 img:hover {
+    transform: scale(1.1);
+      cursor: pointer; /* Увеличиваем масштаб */
+   }
+ .pic__3{
+    display: inline-block; /* Строчно-блочный элемент */
+    overflow: hidden; /* Скрываем всё за контуром */
+   }
+   .pic__3 img {
+    transition: 1s; /* Время эффекта */
+    display: block; /* Убираем небольшой отступ снизу */
+   }
+   .pic__3 img:hover {
+    transform: scale(1.1);
+      cursor: pointer; /* Увеличиваем масштаб */
+   }
+   .pic__2{
+    display: inline-block; /* Строчно-блочный элемент */
+    overflow: hidden; /* Скрываем всё за контуром */
+   }
+   .pic__2 img {
+    transition: 1s; /* Время эффекта */
+    display: block; /* Убираем небольшой отступ снизу */
+   }
+   .pic__2 img:hover {
+    transform: scale(1.1);
+      cursor: pointer; /* Увеличиваем масштаб */
+   }
+    .pic__1{
+    display: inline-block; /* Строчно-блочный элемент */
+    overflow: hidden; /* Скрываем всё за контуром */
+   }
+   .pic__1 img {
+    transition: 1s; /* Время эффекта */
+    display: block; /* Убираем небольшой отступ снизу */
+   }
+   .pic__1 img:hover {
+    transform: scale(1.1);
+      cursor: pointer; /* Увеличиваем масштаб */
+   }
+
+.black{
+width: 533px;
+height: 697px;
+position: absolute;
+display: none;
+top: 0px;
+left: 0px;
+background: rgba(0,0,0,0.3);
+}
+.text__6{
+color: #fff;
+text-align: center;
+position: absolute;
+bottom: 270px;
+text-align: center;
+
+}
+.block:hover .black{
+display: block;
+  cursor: pointer;
+
+}
+.block{
+  position: absolute;
+  top:2108px;
+  left:147px;
+}
+.text__5{
+position: absolute;
+width: 773px;
+height: 134px;
+left: 433px;
+top: 1870px;
+font-weight: 500;
+font-size: 50px;
+line-height: 61px;
+text-align: center;
+letter-spacing: 0.04em;
+}
+.black__2{
+width: 533px;
+height: 697px;
+position: absolute;
+display: none;
+top: 0px;
+left: 0px;
+background: rgba(0,0,0,0.3);
+}
+.text__7{
+color: #fff;
+text-align: center;
+position: absolute;
+bottom: 315px;
+text-align: center;
+left:20px;
+  cursor: pointer;
+}
+.block__2:hover .black__2{
+display: block;
+  cursor: pointer;
+
+}
+.block__2{
+  position: absolute;
+  top:2108px;
+  left:920px;
+}
+.pic__8{
+  position: absolute;
+width: 522px;
+height: 696px;
+left: 920px;
+top: 3069px;
+}
+.text__8{
+position: absolute;
+width: 466px;
+height: 131px;
+left: 181px;
+top: 3152px;
+font-weight: 500;
+font-size: 35px;
+line-height: 61px;
+text-align: center;
+letter-spacing: 0.04em;
+}
+.pic__9{
+  position: absolute;
+width: 533px;
+height: 671px;
+left: 147px;
+top: 3920px;
+}
+.text__9{
+position: absolute;
+width: 466px;
+height: 131px;
+left: 879px;
+top: 4100px;
+font-weight: 500;
+font-size: 35px;
+line-height: 61px;
+text-align: center;
+letter-spacing: 0.04em;
+}
+.pic__8{
+    display: inline-block; /* Строчно-блочный элемент */
+    overflow: hidden; /* Скрываем всё за контуром */
+   }
+   .pic__8 img {
+    transition: 1s; /* Время эффекта */
+    display: block; /* Убираем небольшой отступ снизу */
+   }
+   .pic__8 img:hover {
+    transform: scale(1.1); 
+      cursor: pointer;/* Увеличиваем масштаб */
+   }
+   .pic__9{
+    display: inline-block; /* Строчно-блочный элемент */
+    overflow: hidden; /* Скрываем всё за контуром */
+   }
+   .pic__9 img {
+    transition: 1s; /* Время эффекта */
+    display: block; /* Убираем небольшой отступ снизу */
+   }
+   .pic__9 img:hover {
+    transform: scale(1.1);
+      cursor: pointer; /* Увеличиваем масштаб */
+   }
+   .pic__10{
+    position: absolute;
+width: 634px;
+height: 845px;
+left: 800px;
+top: 4746px;
+   }
+    .pic__10{
+    display: inline-block; /* Строчно-блочный элемент */
+    overflow: hidden; /* Скрываем всё за контуром */
+   }
+   .pic__10 img {
+    transition: 1s; /* Время эффекта */
+    display: block; /* Убираем небольшой отступ снизу */
+   }
+   .pic__10 img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+     /* Увеличиваем масштаб */
+   }
+   .text__10{
+    position: absolute;
+width: 466px;
+height: 131px;
+left: 181px;
+top: 5003px;
+font-weight: 500;
+font-size: 35px;
+line-height: 61px;
+text-align: center;
+letter-spacing: 0.04em;
+   }
+  .text__11{
+position: absolute;
+width: 551px;
+height: 99px;
+left: 158px;
+top: 1466px;
+font-weight: 500;
+font-size: 25px;
+line-height: 49px;
+text-align: center;
+letter-spacing: 0.04em;
+opacity: 0.8;
+}
+.k{
+position: absolute;
+width: 466px;
+height: 131px;
+left: 181px;
+top: 5393px;
+font-weight: 500;
+font-size: 35px;
+line-height: 61px;
+text-align: center;
+letter-spacing: 0.04em;
+}
+.inst{
+position: absolute;
+top: 5493px;
+left:370px;
+}
